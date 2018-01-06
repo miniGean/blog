@@ -75,16 +75,17 @@
 
 
 
-<meta name="description" content="前端笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="blog">
-<meta property="og:url" content="https://github.com/blog/index.html">
-<meta property="og:site_name" content="blog">
-<meta property="og:description" content="前端笔记">
+<meta name="description" content="节流函数节流函数算是老生常谈了，项目里面必备的基础函数，但你真的用对了吗？深入研究了一下，发现自己用的确实不太对。首先了解一下节流函数的概念 节流函数：顾名思义，像节流阀一样均匀的执行，把密集的重复调用，通过设置定时器，使函数在固定的间隔时间调用，在一段时间内，等时间间隔的调用多次，这里跟的bounce函数一定要区分开。 debounce: 中文意思，防反跳，防止密集的重复请求，即一定时间间隔内的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="老生常谈节流函数">
+<meta property="og:url" content="https://github.com/blog/2017/12/04/老生常谈节流函数/index.html">
+<meta property="og:site_name" content="jing&#39;s blog">
+<meta property="og:description" content="节流函数节流函数算是老生常谈了，项目里面必备的基础函数，但你真的用对了吗？深入研究了一下，发现自己用的确实不太对。首先了解一下节流函数的概念 节流函数：顾名思义，像节流阀一样均匀的执行，把密集的重复调用，通过设置定时器，使函数在固定的间隔时间调用，在一段时间内，等时间间隔的调用多次，这里跟的bounce函数一定要区分开。 debounce: 中文意思，防反跳，防止密集的重复请求，即一定时间间隔内的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-06T15:05:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="blog">
-<meta name="twitter:description" content="前端笔记">
+<meta name="twitter:title" content="老生常谈节流函数">
+<meta name="twitter:description" content="节流函数节流函数算是老生常谈了，项目里面必备的基础函数，但你真的用对了吗？深入研究了一下，发现自己用的确实不太对。首先了解一下节流函数的概念 节流函数：顾名思义，像节流阀一样均匀的执行，把密集的重复调用，通过设置定时器，使函数在固定的间隔时间调用，在一段时间内，等时间间隔的调用多次，这里跟的bounce函数一定要区分开。 debounce: 中文意思，防反跳，防止密集的重复请求，即一定时间间隔内的">
 
 
 
@@ -116,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/blog/"/>
+  <link rel="canonical" href="https://github.com/blog/2017/12/04/老生常谈节流函数/"/>
 
 
 
 
 
-  <title>blog</title>
+  <title>jing's blog</title>
   
 
 
@@ -153,12 +154,12 @@
     <div class="custom-logo-site-title">
       <a href="/blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">blog</span>
+        <span class="site-title">jing's blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">热爱自由</p>
+        <p class="site-subtitle">面朝前端，冬冷夏凉</p>
       
   </div>
 
@@ -249,7 +250,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="blog">
+      <meta itemprop="name" content="jing's blog">
     </span>
 
     
@@ -309,7 +310,7 @@
       
         
           
-            <h3 id="节流函数"><a href="#节流函数" class="headerlink" title="节流函数"></a>节流函数</h3><p>节流函数算是老生常谈了，项目里面必备的基础函数，但你真的用对了吗？深入研究了一下，发现自己用的却是不太对。首先了解一下节流函数的概念</p>
+            <h3 id="节流函数"><a href="#节流函数" class="headerlink" title="节流函数"></a>节流函数</h3><p>节流函数算是老生常谈了，项目里面必备的基础函数，但你真的用对了吗？深入研究了一下，发现自己用的确实不太对。首先了解一下节流函数的概念</p>
 <p>节流函数：顾名思义，像节流阀一样均匀的执行，把密集的重复调用，通过设置定时器，使函数在固定的间隔时间调用，在一段时间内，等时间间隔的调用多次，这里跟的bounce函数一定要区分开。</p>
 <p>debounce: 中文意思，防反跳，防止密集的重复请求，即一定时间间隔内的密集请求都丢弃，等待间隔时间后不再请求再去执行，在一段时间内，可能只调用一次。</p>
 <p>分清楚这两个概念之后，先看一段代码：</p>
